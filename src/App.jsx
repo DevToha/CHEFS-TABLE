@@ -1,13 +1,18 @@
 
 import './App.css'
+import Banner from './components/banner'
+import Navbar from './components/nav-bar'
 
 function App() {
 
   return (
     <>
-      
-      <h1>Assignment-7</h1>
-           
+
+      <div className='mx-w-[1075px] m-auto px-10'>
+        <Navbar></Navbar>
+        <Banner></Banner>
+      </div>
+
     </>
   )
 }
