@@ -7,8 +7,10 @@ export default function Banner() {
                     <div className="">
                         <h1 className="mb-5 text-5xl font-bold text-white">Discover an exceptional cooking <br /> class tailored for you!</h1>
                         <p className="mb-5">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ <br /> coding problems to become an exceptionally well world-class Programmer.</p>
-                        <button className="  bg-green-400 w-[130px] h-[55px] rounded-md text-black font-semibold text-lg">Explore Now</button>
-                        <button className=" border-2 text-lg border-[#1dd100] ml-5 rounded-md font-semibold w-[130px] h-[55px]">Our Feedback</button>
+                        <button className=" btn bg-[#10B981] w-[150px] h-[55px] rounded-md text-black font-semibold text-lg">Explore Now</button>
+
+                        <button className="btn btn-outline border-2 border-[#1dd100] text-lg  ml-5 rounded-md font-semibold w-[150px] h-[55px] text-white ">Our Feedback</button>
+
                     </div>
                 </div>
             </div>
