@@ -7,12 +7,12 @@ const Food = ({ food }) => {
 
     // const buttonClickFunction = `handleButtonClick${index + 1}()`;
 
-    const buttonClicked = document.getElementById('buttonClicked')
-    console.log(buttonClicked,'clicked')
-
+    function buttonClicked() {
+        console.log('add')
+    }
 
     return (
-        <div className=' border-2 px-7 border-[#28282833] w-[400px] h-[715px] mb-5 rounded-2xl ]'>
+        <div className=' border-2 px-7 border-[#28282833] w-[400px] h-[715px] rounded-2xl ]'>
             <img className='w-[360px] h-[250px] rounded-xl  my-5' src={recipe_image} alt="" />
             <h1 className=' text-base'>{recipe_name}</h1>
             <p className=' my-5'>{short_description}</p>
