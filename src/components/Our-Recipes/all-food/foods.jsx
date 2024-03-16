@@ -10,8 +10,9 @@ const Foods = () => {
             .then(res => res.json())
             .then(data => setFoods(data))
     }, [])
+
     return (
-        <div className="grid grid-cols-2 gap-8">
+        <div className="lg:grid lg:grid-cols-2 gap-8">
 
             {
                 foods.map(food => <Food key={food.recipe_id} food={food}></Food>)

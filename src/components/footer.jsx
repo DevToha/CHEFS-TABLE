@@ -1,6 +1,6 @@
 import facebook from '../Image/icons8-facebook-30.png'
 import twitter from '../Image/icons8-twitter-30.png'
-import github from '../Image/icons8-github-30.png'
+// import github from '../Image/icons8-github-30.png'
 import instagram from '../Image/icons8-instagram-30.png'
 
 
@@ -22,11 +22,11 @@ export default function Footer() {
                         <img className=' cursor-pointer' src={facebook} alt="" />
                         <img className=' cursor-pointer' src={twitter} alt="" />
                         <img className=' cursor-pointer' src={instagram} alt="" />
-                        <img className=' cursor-pointer' src={github} alt="" />
+                        {/* <img className=' cursor-pointer' src={github} alt="" /> */}
                     </div>
                 </nav>
                 <aside>
-                    <div id="verticle-line" className="lg:w-[825px] w-[290px] h-1 bg-[#1313181A]"></div>
+                    <div className="lg:w-[825px] w-[215px] h-1 bg-[#1313181A]"></div>
                     <p className="text-gray-500 mt-7">2017, All Rights Reserved.</p>
                 </aside>
             </footer>

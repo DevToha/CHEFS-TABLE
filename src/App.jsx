@@ -16,7 +16,7 @@ function App() {
         <Navbar></Navbar>
         <Banner></Banner>
         <Recipe></Recipe>
-        <div className=' flex gap-20'>
+        <div className=' lg:flex gap-20'>
           <Foods></Foods>
           <Cooked></Cooked>
         </div>

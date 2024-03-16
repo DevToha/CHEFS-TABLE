@@ -7,47 +7,177 @@ export default function Cooked() {
         hidden1.classList.remove('hidden')
         const addHidden1 = document.getElementById('add-hidden1')
         addHidden1.classList.add('hidden')
+
+        // Currently cooking part
+        const current = document.getElementById('selected-seat');
+        const currentSeat = current.innerText;
+        const currentSeatNumber = parseInt(currentSeat);
+        console.log(currentSeatNumber);
+
+        const newSeatNumber = currentSeatNumber + 1;
+
+        current.innerText = newSeatNumber
+
+        // Want to cook part
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft - 1;
+
+        currentLeft.innerText = newSeatNumberLeft
     }
     function row2() {
         const hidden2 = document.getElementById('hidden2')
         hidden2.classList.remove('hidden')
         const addHidden2 = document.getElementById('add-hidden2')
         addHidden2.classList.add('hidden')
+
+        // Currently cooking part
+        const current = document.getElementById('selected-seat');
+        const currentSeat = current.innerText;
+        const currentSeatNumber = parseInt(currentSeat);
+        console.log(currentSeatNumber);
+
+        const newSeatNumber = currentSeatNumber + 1;
+
+        current.innerText = newSeatNumber
+
+        // Want to cook part
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft - 1;
+
+        currentLeft.innerText = newSeatNumberLeft
     }
     function row3() {
         const hidden3 = document.getElementById('hidden3')
         hidden3.classList.remove('hidden')
         const addHidden3 = document.getElementById('add-hidden3')
         addHidden3.classList.add('hidden')
+
+        // Currently cooking part
+        const current = document.getElementById('selected-seat');
+        const currentSeat = current.innerText;
+        const currentSeatNumber = parseInt(currentSeat);
+        console.log(currentSeatNumber);
+
+        const newSeatNumber = currentSeatNumber + 1;
+
+        current.innerText = newSeatNumber
+
+        // Want to cook part
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft - 1;
+
+        currentLeft.innerText = newSeatNumberLeft
+        
     }
     function row4() {
         const hidden4 = document.getElementById('hidden4')
         hidden4.classList.remove('hidden')
         const addHidden4 = document.getElementById('add-hidden4')
         addHidden4.classList.add('hidden')
+
+        // Currently cooking part
+        const current = document.getElementById('selected-seat');
+        const currentSeat = current.innerText;
+        const currentSeatNumber = parseInt(currentSeat);
+        console.log(currentSeatNumber);
+
+        const newSeatNumber = currentSeatNumber + 1;
+
+        current.innerText = newSeatNumber
+
+        // Want to cook part
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft - 1;
+
+        currentLeft.innerText = newSeatNumberLeft
+
     }
     function row5() {
         const hidden5 = document.getElementById('hidden5')
         hidden5.classList.remove('hidden')
         const addHidden5 = document.getElementById('add-hidden5')
         addHidden5.classList.add('hidden')
+
+        // Currently cooking part
+        const current = document.getElementById('selected-seat');
+        const currentSeat = current.innerText;
+        const currentSeatNumber = parseInt(currentSeat);
+        console.log(currentSeatNumber);
+
+        const newSeatNumber = currentSeatNumber + 1;
+
+        current.innerText = newSeatNumber
+
+        // Want to cook part
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft - 1;
+
+        currentLeft.innerText = newSeatNumberLeft
+
     }
     function row6() {
         const hidden6 = document.getElementById('hidden6')
         hidden6.classList.remove('hidden')
         const addHidden6 = document.getElementById('add-hidden6')
         addHidden6.classList.add('hidden')
+
+        // Currently cooking part
+        const current = document.getElementById('selected-seat');
+        const currentSeat = current.innerText;
+        const currentSeatNumber = parseInt(currentSeat);
+        console.log(currentSeatNumber);
+
+        const newSeatNumber = currentSeatNumber + 1;
+
+        current.innerText = newSeatNumber
+
+        // Want to cook part
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft - 1;
+
+        currentLeft.innerText = newSeatNumberLeft
+
     }
 
     // remove hidden part close 
 
     return (
-        <div className=" border-2 border-[#28282833] w-[525px] pr-2 h-full pb-5 rounded-2xl ">
+        <div className=" border-2 border-[#28282833] lg:w-[525px] lg:pr-2 h-full pb-5 rounded-2xl ">
 
             {/* Want to cook */}
             <div>
                 <div className=" text-center my-5 px-14">
-                    <h5 className=" mb-3 font-semibold text-2xl">Want to cook: 00</h5>
+                    <h5 className=" mb-3 font-semibold text-2xl">Want to cook: <span id="seat-left">00</span></h5>
                     <hr />
                 </div>
 
@@ -66,7 +196,7 @@ export default function Cooked() {
                             </thead>
                             <tbody>
                                 {/* row 1 */}
-                                <tr id="add-hidden1" className="hover">
+                                <tr id="add-hidden1" className="hover hidden">
                                     <th>1</th>
                                     <td>Spicy Chicken Stir Fry</td>
                                     <td>30 minutes</td>
@@ -126,7 +256,7 @@ export default function Cooked() {
             {/* Currently cooking */}
             <div>
                 <div className=" text-center my-5 px-14">
-                    <h5 className=" mb-3 font-semibold text-2xl mt-10">Currently cooking: 00</h5>
+                    <h5 className=" mb-3 font-semibold text-2xl mt-10">Currently cooking: <span id="selected-seat">00</span></h5>
                     <hr />
                 </div>
 

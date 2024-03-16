@@ -5,14 +5,23 @@ const Food = ({ food }) => {
 
     const { recipe_name, recipe_image, short_description, ingredients, clock_image, calories_image, preparing_time, calories } = food;
 
-    // const buttonClickFunction = `handleButtonClick${index + 1}()`;
 
     function buttonClicked() {
-        console.log('add')
+        const addHidden1 = document.getElementById('add-hidden1')
+        addHidden1.classList.remove('hidden')
+
+        const currentLeft = document.getElementById('seat-left');
+        const currentSeatLeft = currentLeft.innerText;
+        const currentSeatNumberLeft = parseInt(currentSeatLeft);
+        console.log(currentSeatNumberLeft);
+
+        const newSeatNumberLeft = currentSeatNumberLeft + 1;
+
+        currentLeft.innerText = newSeatNumberLeft
     }
 
     return (
-        <div className=' border-2 px-7 border-[#28282833] w-[400px] h-[715px] rounded-2xl ]'>
+        <div className=' border-2 px-7 border-[#28282833] lg:w-[400px] h-[725px] rounded-2xl mb-3 lg:pb-0 pb-3'>
             <img className='w-[360px] h-[250px] rounded-xl  my-5' src={recipe_image} alt="" />
             <h1 className=' text-base'>{recipe_name}</h1>
             <p className=' my-5'>{short_description}</p>
