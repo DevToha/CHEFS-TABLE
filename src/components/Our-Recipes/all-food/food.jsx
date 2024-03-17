@@ -1,24 +1,14 @@
 import PropTypes from 'prop-types';
-// import clock from './'
 
-const Food = ({ food }) => {
+
+// import { ToastContainer, toast } from 'react-toastify';
+// import 'react-toastify/dist/ReactToastify.css';
+
+
+const Food = ({ food, handleCookedFood }) => {
 
     const { recipe_name, recipe_image, short_description, ingredients, clock_image, calories_image, preparing_time, calories } = food;
 
-
-    function buttonClicked() {
-        const addHidden1 = document.getElementById('add-hidden1')
-        addHidden1.classList.remove('hidden')
-
-        const currentLeft = document.getElementById('seat-left');
-        const currentSeatLeft = currentLeft.innerText;
-        const currentSeatNumberLeft = parseInt(currentSeatLeft);
-        console.log(currentSeatNumberLeft);
-
-        const newSeatNumberLeft = currentSeatNumberLeft + 1;
-
-        currentLeft.innerText = newSeatNumberLeft
-    }
 
     return (
         <div className=' border-2 px-7 border-[#28282833] lg:w-[400px] h-[725px] rounded-2xl mb-3 lg:pb-0 pb-3'>
@@ -46,13 +36,16 @@ const Food = ({ food }) => {
                 </div>
             </div>
 
-            <button onClick={buttonClicked} className="btn rounded-3xl bg-green-400 w-[190px] h-[]">Want to Cook</button>
+            <button onClick={() => handleCookedFood(food)} className="btn rounded-3xl bg-green-400 w-[190px] h-[]">Want to Cook</button>
+            {/* <ToastContainer></ToastContainer> */}
         </div>
     );
 };
 
 Food.propTypes = {
-    food: PropTypes.object.isRequired
+    food: PropTypes.object.isRequired,
+    handleCookedFood: PropTypes.func
+
 }
 
 export default Food;
