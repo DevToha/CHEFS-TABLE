@@ -2,7 +2,7 @@ export default function Banner() {
     return (
         <div className=" mt-5">
             <div className="hero lg:h-[500px] h-[700px] lg:w-[1410px] lg:ml-[20px] rounded-3xl" style={{ backgroundImage: 'url(https://i.ibb.co/0BZqsR8/cooking.jpg' }}>
-                {/* <div className="bg-opacity-50 bg-black"></div> */}
+                
                 <div className="hero-content text-center text-neutral-content">
                     <div className="">
                         <h1 className="mb-5 text-5xl font-bold text-white">Discover an exceptional cooking <br /> class tailored for you!</h1>

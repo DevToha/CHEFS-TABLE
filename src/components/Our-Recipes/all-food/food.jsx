@@ -7,7 +7,6 @@ import 'react-toastify/dist/ReactToastify.css';
 const Food = ({ food, handleCookedFood }) => {
     const { recipe_name, recipe_image, short_description, ingredients, clock_image, calories_image, preparing_time, calories } = food;
 
-    // State to track if the button has been clicked
     const [clicked, setClicked] = useState(false)
 
     const handleButtonClick = () => {
