@@ -6,7 +6,7 @@ export default function Banner() {
                 <div className="hero-content text-center text-neutral-content">
                     <div className="">
                         <h1 className="mb-5 text-5xl font-bold text-white">Discover an exceptional cooking <br /> class tailored for you!</h1>
-                        <p className="mb-5 text-white">Learn and Master Basic Programming, Data Structures, Algorithm, OOP, Database and solve 500+ <br /> coding problems to become an exceptionally well world-class Programmer.</p>
+                        <p className="mb-5 text-white">Embark on a culinary journey like no other with our bespoke cooking classes, meticulously tailored to suit your skills and preferences, <br /> ensuring an exceptional and personalized experience from start to finish.</p>
                         <button className=" btn bg-[#10B981] w-[150px] h-[55px] rounded-md text-black font-semibold text-lg">Explore Now</button>
 
                         <button className="btn btn-outline border-2 border-[#797DFC] text-lg  ml-5 rounded-md font-semibold w-[150px] h-[55px] text-white ">Our Feedback</button>

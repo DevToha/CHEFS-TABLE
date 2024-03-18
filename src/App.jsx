@@ -7,13 +7,13 @@ import Foods from './components/Our-Recipes/all-food/foods'
 import Banner from './components/banner'
 import Footer from './components/footer'
 import Navbar from './components/nav-bar'
-import Cookingfood from './components/Our-Recipes/all-food/Cookingfood'
+import Cookingfood from './components/Our-Recipes/all-food/Cookingfoods'
 
 function App() {
 
   const [cookedFood, setCookedFood] = useState([])
 
-  const [cookingfood, setCookingfood] = useState([])
+  const [cookingfoods, setCookingfood] = useState([])
 
   const handleCookedFood = food => {
     const newCookFood = [...cookedFood, food]
@@ -22,7 +22,8 @@ function App() {
   }
 
   const handleCookingFood = cooking => {
-    console.log(cooking)
+    const newCookigfood = [...cookingfoods, cooking]
+    setCookingfood(newCookigfood)
   }
 
   return (
@@ -39,7 +40,7 @@ function App() {
           </div>
           <div className=" border-2 border-[#28282833] lg:w-[525px] lg:pr-2 h-full pb-5 rounded-2xl ">
             <Cooked handleCookingFood={handleCookingFood} cookedFood={cookedFood}></Cooked>
-            <Cookingfood></Cookingfood>
+            <Cookingfood cookingfoods={cookingfoods} ></Cookingfood>
           </div>
         </div>
         <Footer></Footer>

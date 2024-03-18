@@ -1,11 +1,12 @@
+
 import PropTypes from 'prop-types';
 
-const Cookfood = ({ cookfood, handleCookingFood }) => {
+const Cookingfoods = ({ cookingfood }) => {
 
-    const { recipe_name, preparing_time, calories, recipe_id } = cookfood
+    const { recipe_name, preparing_time, calories, recipe_id } = cookingfood;
+
     return (
         <div>
-
             <div>
                 <div className="overflow-x-auto">
                     <table className="table">
@@ -25,7 +26,7 @@ const Cookfood = ({ cookfood, handleCookingFood }) => {
                                 <td className=' font-semibold'>{recipe_name}</td>
                                 <td>{preparing_time}</td>
                                 <td>{calories}</td>
-                                <button onClick={() => handleCookingFood(cookfood)} className="btn btn-outline mt-2 rounded-3xl bg-green-400 w-[105px] border-white">Preparing</button>
+
                             </tr>
 
 
@@ -37,9 +38,8 @@ const Cookfood = ({ cookfood, handleCookingFood }) => {
     );
 };
 
-Cookfood.propTypes = {
-    cookfood: PropTypes.object,
-    handleCookingFood: PropTypes.func.isRequired
-}
+Cookingfoods.propTypes = {
+    cookingfood: PropTypes.object.isRequired,
+};
 
-export default Cookfood;
+export default Cookingfoods;

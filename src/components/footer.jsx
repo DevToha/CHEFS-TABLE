@@ -13,8 +13,7 @@ export default function Footer() {
                     <h3 className="font-black text-4xl">Recipe Calories</h3>
                 </nav>
                 <nav>
-                    <p className="text-gray-500">Thank you for being part of our ReTro Forum community.keep the conversation
-                        <br /> going and make memories that last a lifetime!
+                    <p className="text-gray-500">Explore our online restaurant where every dishs calorie count is meticulously <br /> provided for guilt-free indulgence.
                     </p>
                 </nav>
                 <nav>

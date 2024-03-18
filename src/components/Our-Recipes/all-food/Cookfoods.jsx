@@ -8,7 +8,7 @@ const Cooked = ({ cookedFood,handleCookingFood }) => {
     return (
         <div>
 
-            {/* Want to cook */}
+
             <div>
                 <div className=" text-center my-5 px-14">
                     <h5 className=" mb-3 font-semibold text-2xl">Want to cook: {cookedFood.length}</h5>
@@ -22,7 +22,7 @@ const Cooked = ({ cookedFood,handleCookingFood }) => {
 
             </div>
 
-            {/* Currently cooking */}
+
           
         </div>
     )
